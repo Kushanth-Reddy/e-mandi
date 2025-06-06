@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Emandi.css" />
+    <title>Document</title>
+  </head>
+
+  <body class="">
+    <header class="sticky top-0 z-10 bg-white">
+      <nav class="flex justify-between items-center p-5 bg-white">
+        <div>
+          <h1 class="text-green-600 text-3xl font-[sans-serif]">e-Mandi</h1>
+        </div>
+        <div class="w-[2em] flex items-center translate-x-[-90px]">
+          <img src="tag.svg" alt="" class=" " />
+          <p class="font-[sans-serif]">Dundigal</p>
+        </div>
+        <div
+          id="cart"
+          class="h-[40px] w-[80px] border-[1px] border-green-600 flex justify-center items-center cursor-pointer hover:bg-green-600 hover:text-white hover:border-[2px] hover:border-yellow-500"
+        >
+          <span class="font-[sans-serif]">Cart</span>
+        </div>
+        <div class="menu">
+          <div class="flex justify-around items-center">
+            <div class="w-full h-16 bg-black flex justify-between">
+              <div class="ml-3">
+                <span class="text-white text-xl mr-3">My Cart</span>
+                <span class="text-white text-xl mr-1">0</span>
+                <span class="text-green-800 text-xl">items</span>
+                <div class="prod_list flex flex-col"></div>
+              </div>
+              <div id="cross" class="mt-6 mr-12 relative cursor-pointer">
+                <div
+                  class="w-[30px] h-1 bg-white rotate-45 absolute top-0 left-0"
+                ></div>
+                <div
+                  class="w-[30px] h-1 bg-white -rotate-45 absolute top-0 left-0"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between border-b-[1px] border-gray-500 py-2">
+            <div class="text-[1.25rem] text-gray-600 ml-3">Sub total</div>
+            <div class="text-[1.25rem] text-gray-600 mr-3 sub_total">0</div>
+          </div>
+          <div class="list_prod"></div>
+        </div>
+      </nav>
+      <div
+        class="flex bg-green-600 items-center justify-between p-2 sticky top-0"
+      >
+        <div class="flex">
+          <div
+            class="border-r-[1px] rounded-[1px] border-r-white flex justify-center items-center px-4"
+          >
+            <span class="font-[sans-serif] text-white text-sm"
+              ><a href="">Products new</a></span
+            >
+          </div>
+          <div
+            class="border-r-[1px] rounded-[1px] border-r-white flex justify-center items-center px-4"
+          >
+            <span class="font-[sans-serif] text-white text-sm"
+              ><a href="">Offers</a></span
+            >
+          </div>
+          <div
+            class="border-r-[1px] rounded-[1px] border-r-white flex justify-center items-center px-4"
+          >
+            <span class="font-[sans-serif] text-white text-sm"
+              ><a href="vegetable.html">Vegetables</a></span
+            >
+          </div>
+          <div
+            class="border-r-[1px] rounded-[1px] border-r-white flex justify-center items-center px-4"
+          >
+            <span class="font-[sans-serif] text-white text-sm"
+              ><a href="fruits.html">Fruits</a></span
+            >
+          </div>
+          <div
+            class="border-r-[1px] rounded-[1px] border-r-white flex justify-center items-center px-4"
+          >
+            <span class="font-[sans-serif] text-white text-sm"
+              ><a href="">Exotic</a></span
+            >
+          </div>
+          <div
+            class="border-r-[1px] rounded-[1px] border-r-white flex justify-center items-center px-4"
+          >
+            <span class="font-[sans-serif] text-white text-sm"
+              ><a href="">Fresh cuts</a></span
+            >
+          </div>
+          <div
+            class="border-r-[1px] rounded-[1px] border-r-white flex justify-center items-center px-4"
+          >
+            <span class="font-[sans-serif] text-white text-sm"
+              ><a href="">Nutrition Chargers</a></span
+            >
+          </div>
+          <div
+            class="border-r-[1px] rounded-[1px] border-r-white flex justify-center items-center px-4"
+          >
+            <span class="font-[sans-serif] text-white text-sm"
+              ><a href="">Packed flavours</a></span
+            >
+          </div>
+          <div
+            class="border-r-[1px] rounded-[1px] border-white flex justify-center items-center px-4"
+          >
+            <span class="font-[sans-serif] text-white text-sm"
+              ><a href="">Gourmet Salads</a></span
+            >
+          </div>
+        </div>
+        <div
+          class="border-[1px] border-white rounded-md mr-4 px-5 py-1 flex justify-center items-center bg-white"
+        >
+          <a href="signUp.html" class="text-green-600">Sign In</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-slate-100 flex justify-center items-center">
+      <div><img src="emandi.jpeg" alt="" class="h-[500px]" /></div>
+    </section>
+    <div class="flex justify-center items-center">
+      <div class="flex mr-20">
+        <div class="flex justify-center items-center">
+          <img src="res.svg" alt="" class="w-[35%] h-[35%] translate-x-8" />
+          <div>
+            <h2 class="text-center text-lg">Residue Testing</h2>
+            <p class="text-center">Regular pesticide residue <br />testing</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center translate-x-[-50px]">
+          <img src="sorce.svg" alt="" class="w-[35%] h-[35%] translate-x-10" />
+          <div>
+            <h2 class="text-center text-lg">Local Sourcing</h2>
+            <p class="text-center">
+              Sourcing locally from approved <br />farmers
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <img src="trace.svg" alt="" class="w-[35%] h-[35%]" />
+          <div>
+            <h2 class="text-center text-lg">Traceability</h2>
+            <p class="text-center">Supply chain traceability in farm level</p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <img src="d.svg" alt="" class="w-[35%] h-[35%] translate-x-8" />
+          <div>
+            <h2 class="text-center text-lg">Order now</h2>
+            <p>Delivered tomorrow</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="bg-slate-100">
+      <div class="flex justify-between p-20">
+        <div class="flex flex-col justify-center items-center space-y-5">
+          <iframe
+            src="https://www.youtube.com/embed/TVzdrtt2BZ4"
+            frameborder=""
+            class="w-[450px] h-[300px] border-r-t"
+            style="
+              border-top-right-radius: 30px;
+              border-bottom-left-radius: 30px;
+            "
+          ></iframe>
+          <img src="sos.jpg" alt="" class="w-[3ems] h-[200px]" />
+        </div>
+        <div
+          class="bg-white w-[60%] max-h-[540px] p-8 overflow-y-auto"
+          style="border-top-right-radius: 30px; border-bottom-left-radius: 30px"
+        >
+          <div>
+            <h1 class="text-start text-3xl font-bold font-[sans-serif]">
+              Safe food, Now traceable
+            </h1>
+            <p class="my-6 font-[sans-serif]">Your food is now traceable!</p>
+            <p class="my-6 font-[sans-serif]">
+              We are revolutionizing the way the world consumes fruits &
+              vegetables. With the help of our technology, your food is now
+              completely traceable. Get insights about your produce, farmer &
+              farming methods just by scanning a QR code!.
+            </p>
+            <p class="my-6 font-[sans-serif]">
+              Our farmers community follow good agricultural practices under our
+              regular supervision. Moreover, the produce is regularly tested for
+              pesticides & strict quality checks ensure our customers get
+              nothing but the freshest product out there.
+            </p>
+            <p class="my-6 font-[sans-serif]">
+              It’s time to change the way you eat- Grab your traceable food &
+              trace it right back to its roots. Step into a world of healthy &
+              pesticide-free lifestyle, with Farmers Fresh Zone.
+            </p>
+            <p class="mt-6 mb-8 font-[sans-serif]">
+              Everybody’s switching to a healthy lifestyle with Farmers Fresh
+              Zone, have you ?.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="px-20 pb-5">
+        <div>
+          <p class="text-lg">
+            One stop solution for those who don't compromise on health & quality
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold">
+            We are not traders of fresh food, We bring food safety in the agri
+            supply chain,
+          </h3>
+        </div>
+      </div>
+    </section>
+    <h2 class="text-center pt-8 pb-0 font-[sans-serif] text-2xl font-semibold">
+      <span>Deal Of The Week</span>
+    </h2>
+    <section class="flex flex-wrap justify-between p-8 prod">
+      <div
+        class="h-[520.2px] w-[300px] border-1 rounded-lg shadow-md shadow-gray-600 border-gray-200 bg-white flex justify-center items-center p-12 mb-7"
+      >
+        <div class="">
+          <span class="p-4">58% Off</span>
+          <div class="w-[300px] h-[193.33px] mb-2 overflow-hidden">
+            <img
+              src="lf.jpeg"
+              alt=""
+              class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
+            />
+          </div>
+          <div class="flex flex-row justify-center items-center">
+            <div>
+              <span class="ml-6 font-[sans-serif] text-lg">Ladies Finger</span>
+              <p class="my-6 font-[sans-serif] text-gray-600 px-4">
+                Ladies finger or okra, no matter what you call it will always be
+                the crowd favorite!
+              </p>
+              <span class="px-4">Net Wt: 0.30 Kg</span>
+              <div class="flex space-x-[70px] mt-4 items-center">
+                <div class="px-4">
+                  <s>₹37.80</s>
+                  <div class="text-green-600">₹ 16.20</div>
+                </div>
+                <div class="">
+                  <div
+                    class="h-[40px] w-[140px] border-[1px] flex justify-center items-center bg-green-600 text-white font-[sans-serif] text-[13px] rounded-md shadow-none transition-all duration-500 ease-in-out hover:shadow-[5px_5px_15px_5px_rgba(0,0,0,0.3)]"
+                    data-custom="0"
+                  >
+                    <a href="" class="font-[sans-serif]">ADD TO CART</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-[520.2px] w-[300px] border-1 rounded-lg shadow-md shadow-gray-600 border-gray-200 bg-white flex justify-center items-center p-12"
+      >
+        <div class="">
+          <div class="w-[300px] h-[193.33px] mb-2 overflow-hidden">
+            <img
+              src="cucu.jpeg"
+              alt=""
+              class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
+            />
+          </div>
+          <div class="flex flex-row justify-center items-center">
+            <div>
+              <span class="ml-6 font-[sans-serif] text-lg">Salad Cucumber</span>
+              <p class="my-6 font-[sans-serif] text-gray-600 px-4">
+                They’re low in calories and naturally fat-free, making them an
+                excellent choice for healthy eating
+              </p>
+              <span class="px-4">Net Wt: 0.50 Kg</span>
+              <div class="flex space-x-[70px] mt-4 items-center">
+                <div class="px-4">
+                  <s>₹ 41.48</s>
+                  <div class="text-green-600">₹ 30.00</div>
+                </div>
+                <div class="">
+                  <div
+                    class="h-[40px] w-[140px] border-[1px] flex justify-center items-center bg-green-600 text-white font-[sans-serif] text-[13px] rounded-md shadow-none transition-all duration-500 ease-in-out hover:shadow-[5px_5px_15px_5px_rgba(0,0,0,0.3)]"
+                    data-custom="1"
+                  >
+                    <a href="" class="font-[sans-serif]">ADD TO CART</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-[520.2px] w-[300px] border-1 rounded-lg shadow-md shadow-gray-600 border-gray-200 bg-white flex justify-center items-center p-12"
+      >
+        <div class="">
+          <div class="w-[300px] h-[193.33px] mb-2 overflow-hidden">
+            <img
+              src="mush.jpeg"
+              alt=""
+              class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
+            />
+          </div>
+          <div class="flex flex-row justify-center items-center">
+            <div>
+              <span class="ml-6 font-[sans-serif] text-lg"
+                >Button Mushroom (200 gm)</span
+              >
+              <p class="my-6 font-[sans-serif] text-gray-600 px-4">
+                Button mushrooms, are one of the most popular and widely
+                consumed varieties of mushroom.
+              </p>
+              <span class="px-4">Net Wt:1.00 Pack</span>
+              <div class="flex space-x-[70px] mt-4 items-center">
+                <div class="px-4">
+                  <s>₹ 89.25</s>
+                  <div class="text-green-600">₹ 85.00</div>
+                </div>
+                <div class="">
+                  <div
+                    class="h-[40px] w-[140px] border-[1px] flex justify-center items-center bg-green-600 text-white font-[sans-serif] text-[13px] rounded-md shadow-none transition-all duration-500 ease-in-out hover:shadow-[5px_5px_15px_5px_rgba(0,0,0,0.3)]"
+                    data-custom="2"
+                  >
+                    <a href="" class="font-[sans-serif]">ADD TO CART</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-[520.2px] w-[300px] border-1 rounded-lg shadow-md shadow-gray-600 border-gray-200 bg-white flex justify-center items-center p-12"
+      >
+        <div class="">
+          <div class="w-[300px] h-[193.33px] mb-2 overflow-hidden">
+            <img
+              src="pa.jpeg"
+              alt=""
+              class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
+            />
+          </div>
+          <div class="flex flex-row justify-center items-center">
+            <div>
+              <span class="ml-6 font-[sans-serif] text-lg"
+                >Pineapple-Semi ripe <br />
+              </span>
+              <p class="my-6 font-[sans-serif] text-gray-600 px-4">
+                The refreshing & tangy flavour of Pineapples is cherished by
+                all!
+              </p>
+              <span class="px-4">Net Wt:(800 gm - 1.5 kg)</span>
+
+              <div class="flex space-x-[70px] mt-4 items-center">
+                <div class="px-4">
+                  <s>₹119.00</s>
+                  <div class="text-green-600">₹ 95.00</div>
+                </div>
+                <div class="">
+                  <div
+                    class="h-[40px] w-[140px] border-[1px] flex justify-center items-center bg-green-600 text-white font-[sans-serif] text-[13px] rounded-md shadow-none transition-all duration-500 ease-in-out hover:shadow-[5px_5px_15px_5px_rgba(0,0,0,0.3)]"
+                    data-custom="3"
+                  >
+                    <a href="" class="font-[sans-serif]">ADD TO CART</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-[520.2px] w-[300px] border-1 rounded-lg shadow-md shadow-gray-600 border-gray-200 bg-white flex justify-center items-center p-12"
+      >
+        <div class="">
+          <div class="w-[300px] h-[193.33px] mb-2 overflow-hidden">
+            <img
+              src="carrot.jpeg"
+              alt=""
+              class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
+            />
+          </div>
+          <div class="flex flex-row justify-center items-center">
+            <div>
+              <span class="ml-6 font-[sans-serif] text-lg"
+                >Carrot Stick Cut - 250 gm</span
+              >
+              <p class="my-6 font-[sans-serif] text-gray-600 px-4">
+                Loaded with fiber this healthy vegetables keeps blood sugar
+                levels in control & also aids in weight
+              </p>
+              <span class="px-4">Net Wt: 1.00 Box</span>
+              <div class="flex space-x-[70px] mt-4 items-center">
+                <div class="px-4">
+                  <s>₹ 68.0</s>
+                  <div class="text-green-600">₹ 49.0</div>
+                </div>
+                <div class="">
+                  <div
+                    class="h-[40px] w-[140px] border-[1px] flex justify-center items-center bg-green-600 text-white font-[sans-serif] text-[13px] rounded-md shadow-none transition-all duration-500 ease-in-out hover:shadow-[5px_5px_15px_5px_rgba(0,0,0,0.3)]"
+                    data-custom="4"
+                  >
+                    <a href="" class="font-[sans-serif]">ADD TO CART</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-[520.2px] w-[300px] border-1 rounded-lg shadow-md shadow-gray-600 border-gray-200 bg-white flex justify-center items-center p-12"
+      >
+        <div class="">
+          <div class="w-[300px] h-[193.33px] mb-2 overflow-hidden">
+            <img
+              src="apple.jpeg"
+              alt=""
+              class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
+            />
+          </div>
+          <div class="flex flex-row justify-center items-center">
+            <div>
+              <span class="ml-6 font-[sans-serif] text-lg"
+                >Green Apple(450 gm - 550 gm)</span
+              >
+              <p class="my-6 font-[sans-serif] text-gray-600 px-4">
+                Green apples have a pleasing light-green coloured skin with a
+                sweet and sour taste.
+              </p>
+              <span class="px-4">Net Wt: 450gm</span>
+              <div class="flex space-x-[70px] mt-4 items-center">
+                <div class="px-4">
+                  <s>₹120.80</s>
+                  <div class="text-green-600">₹ 99.20</div>
+                </div>
+                <div class="">
+                  <div
+                    class="h-[40px] w-[140px] border-[1px] flex justify-center items-center bg-green-600 text-white font-[sans-serif] text-[13px] rounded-md shadow-none transition-all duration-500 ease-in-out hover:shadow-[5px_5px_15px_5px_rgba(0,0,0,0.3)]"
+                    data-custom="5"
+                  >
+                    <a href="" class="font-[sans-serif]">ADD TO CART</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-[520.2px] w-[300px] border-1 rounded-lg shadow-md shadow-gray-600 border-gray-200 bg-white flex justify-center items-center p-12"
+      >
+        <div class="">
+          <div class="w-[300px] h-[193.33px] mb-2 overflow-hidden">
+            <img
+              src="sambarcut.jpeg"
+              alt=""
+              class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
+            />
+          </div>
+          <div class="flex flex-row justify-center items-center">
+            <div>
+              <span class="ml-6 font-[sans-serif] text-lg"
+                >Sambar Cut Mini Pack 250gm</span
+              >
+              <p class="my-6 font-[sans-serif] text-gray-600 px-4">
+                The best Sambar is made from the freshest ingredients & we're
+                bringing just that to you!
+              </p>
+              <span class="px-4">Net Wt: 1.00 Box</span>
+              <div class="flex space-x-[70px] mt-4 items-center">
+                <div class="px-4">
+                  <s>₹69.00</s>
+                  <div class="text-green-600">₹ 59.00</div>
+                </div>
+                <div class="">
+                  <div
+                    class="h-[40px] w-[140px] border-[1px] flex justify-center items-center bg-green-600 text-white font-[sans-serif] text-[13px] rounded-md shadow-none transition-all duration-500 ease-in-out hover:shadow-[5px_5px_15px_5px_rgba(0,0,0,0.3)]"
+                    data-custom="6"
+                  >
+                    <a href="" class="font-[sans-serif]">ADD TO CART</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-[520.2px] w-[300px] border-1 rounded-lg shadow-md shadow-gray-600 border-gray-200 bg-white flex justify-center items-center p-12"
+      >
+        <div class="">
+          <div class="w-[300px] h-[193.33px] mb-2 overflow-hidden">
+            <img
+              src="avialcut.jpeg"
+              alt=""
+              class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
+            />
+          </div>
+          <div class="flex flex-row justify-center items-center">
+            <div>
+              <span class="ml-6 font-[sans-serif] text-lg"
+                >Avial Cut Family Pack 500gm</span
+              >
+              <p class="my-6 font-[sans-serif] text-gray-600 px-4">
+                The best Avial is made from the freshest ingredients & we're
+                bringing just that to you!
+              </p>
+              <span class="px-4">Net Wt: 1.00 Box</span>
+              <div class="flex space-x-[70px] mt-4 items-center">
+                <div class="px-4">
+                  <s>₹110.00</s>
+                  <div class="text-green-600">₹ 89.00</div>
+                </div>
+                <div class="">
+                  <div
+                    class="h-[40px] w-[140px] border-[1px] flex justify-center items-center bg-green-600 text-white font-[sans-serif] text-[13px] rounded-md shadow-none transition-all duration-500 ease-in-out hover:shadow-[5px_5px_15px_5px_rgba(0,0,0,0.3)]"
+                    data-custom="7"
+                  >
+                    <a href="" class="font-[sans-serif]">ADD TO CART</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="">
+      <div
+        class="bg-gray-200 px-10 py-10 mx-12 flex justify-between items-center"
+      >
+        <p class="px-4 font-[sans-serif] text-3xl text-gray-600">
+          We are working towards safe food - which are Nutri – Locked and
+          hygienic as well
+        </p>
+        <div class="w-20 h-20">
+          <img src="approved.svg" alt="" class="h-[100%] w-[100%]" />
+        </div>
+      </div>
+    </section>
+    <h2 class="text-center p-2 mt-5 text-3xl font-bold">Explore By Category</h2>
+    <section class="flex flex-wrap p-8">
+      <div class="h-[200px] w-[200px] p-8 overflow-hidden">
+        <img
+          src="offer.png"
+          alt=""
+          class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110 rounded-md"
+        />
+        <p class="text-center font-bold text-xl">Offers</p>
+      </div>
+      <div class="h-[200px] w-[200px] p-8 overflow-hidden">
+        <img
+          src="veg,png.jpg"
+          alt=""
+          class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110 rounded-md"
+        />
+        <p class="text-center font-bold text-xl">Vegetables</p>
+      </div>
+      <div class="h-[200px] w-[200px] p-8 overflow-hidden">
+        <img
+          src="fr.png"
+          alt=""
+          class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110 rounded-md"
+        />
+        <p class="text-center font-bold text-xl">Fruits</p>
+      </div>
+      <div class="h-[200px] w-[200px] p-8 overflow-hidden">
+        <img
+          src="ex.png"
+          alt=""
+          class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110 rounded-md"
+        />
+        <p class="text-center font-bold text-xl">Exotic</p>
+      </div>
+      <div class="h-[200px] w-[200px] p-8 overflow-hidden">
+        <img
+          src="fc.png"
+          alt=""
+          class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110 rounded-md"
+        />
+        <p class="text-center font-bold text-xl">Fresh Cuts</p>
+      </div>
+      <div class="h-[200px] w-[200px] p-8 overflow-hidden">
+        <img
+          src="nc.png"
+          alt=""
+          class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110 rounded-md"
+        />
+        <p class="text-center font-bold text-xl">Leafy Veggies</p>
+      </div>
+      <div class="h-[200px] w-[200px] p-8 overflow-hidden">
+        <img
+          src="pf.png"
+          alt=""
+          class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110 rounded-md"
+        />
+        <p class="text-center font-bold text-xl">flavours</p>
+      </div>
+      <div class="h-[200px] w-[200px] p-8 overflow-hidden">
+        <img
+          src="gs.png"
+          alt=""
+          class="h-[100%] w-[100%] object-cover transition-transform duration-500 ease-in-out transform hover:scale-110 rounded-md"
+        />
+        <p class="text-center font-bold text-xl">Salads</p>
+      </div>
+      <div class="p-8"><img src="fra.png" alt="" /></div>
+    </section>
+    <div class="flex p-10 space-x-8">
+      <div class="w-[799px] h-[194px] bg-gray-100">
+        <img src="fv.png" alt="" class="h-[100%] w-[80%]" />
+      </div>
+      <div class="w-[799px] h-[194px]">
+        <img src="kc.png" alt="" class="h-[100%] w-[100%]" />
+      </div>
+    </div>
+    <section class="flex justify-center items-center border-t-2 mt-2">
+      <div class="p-16 font-[sans-serif]">
+        <div class="text-[17px] font-semibold text-gray-600">
+          Fresh Fruits & Vegetables, picked just for you
+        </div>
+        <br />
+        <div>
+          Many of us don’t have access to fresh fruits &amp; vegetables required
+          for a healthy lifestyle. Thanks to our services you can order fresh
+          fruits &amp; vegetables online. The online fruit &amp; vegetable store
+          has a wide selection of fresh fruits &amp; vegetables. Our online
+          fruits &amp; vegetable delivery service makes shopping easier.
+        </div>
+        <br />
+        <div>
+          Getting through the day can be difficult if your body does not receive
+          optimal nutrition. Poor nutrition can affect your performance,
+          productivity & immunity. During these times where a strong immunity is
+          a must, you just cannot simply overlook the importance of a healthy
+          diet. Switch to a healthier lifestyle with Farmers Fresh Zone. Enter a
+          world of safe & healthy food made to improve your health and nourish
+          you.
+        </div>
+        <br />
+        <div>
+          We work in sync with local farmers, make sure they follow good
+          agricultural practices & harvest fresh and healthy fruits &
+          vegetables. This way, we can source the best produce from local
+          farmers & deliver it to the urban customer through our online fruits &
+          vegetable store. You can also track your food back to the farmer with
+          “Unit Level Traceability” & get to know about your farmer with the
+          “Know Your Farmer” feature. It’s time to change the way you eat, it’s
+          time to start eating healthy, it’s time to choose a healthier future!
+        </div>
+        <br />
+        <div>Eat Safe & Buy Smart with Farmers Fresh Zone.</div>
+        <br />
+        <div>
+          Now delivering fruits & Vegetables in Hyderabad , Dundigal ,Bolarum ,
+          Pochampally. Quick Home Delivery & Multiple Payment Options Including
+          COD at Farm2Fam.com/
+        </div>
+      </div>
+    </section>
+    <div class="bg-gray-100 flex justify-evenly items-center p-8">
+      <div>
+        <p class="text-xl">
+          <span class="text-3xl"> Get Our e-Mandi App </span>
+          <br />
+          Enter your mobile number to receive the app download link
+        </p>
+      </div>
+      <div>
+        <input
+          type="tel"
+          placeholder="+91"
+          class="px-14 py-3 border-2 border-black rounded-md"
+        />
+      </div>
+    </div>
+    <footer class="">
+      <div class="flex justify-between p-16">
+        <div>
+          <div>
+            <p>
+              <span class="text-[18px] text-green-800 font-semibold"
+                >e-Mandi</span
+              >
+              is agri tech startup <br />
+              bridging the gap in fruits and vegetables <br />supply chain. We
+              connect the rural farmers <br />
+              to urban consumers.
+            </p>
+            <br />
+            <div class="flex flex-col justify-between">
+              <span>Addres:IARE college,Dundigal</span>
+              <span>Email:22951a05a9@iare.ac.in</span>
+              <span>call us:6302385191</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between">
+          <span class="text-[18px] text-green-800 font-semibold"
+            >Get To Know Us</span
+          ><span>About Us</span><span>Our Farmers</span><span>Gallery</span
+          ><span>Media</span><span>Blog</span>
+        </div>
+        <div class="flex flex-col justify-between">
+          <span class="text-[18px] text-green-800 font-semibold"
+            >Useful Links</span
+          ><span>Privay Policy</span><span>Return & Refund Policy</span
+          ><span>Ship & delivery Policy</span><span>Terms & Conditions</span
+          ><span>Disclaimer</span><span>Careers</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-[18px] text-green-800 font-semibold">More</span
+          ><span>Sign in or Register</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-[18px] text-green-800 font-semibold">We Serve</span>
+          <span>Hyderabad</span><span>Dundigal</span><span>Bolarum</span
+          ><span>Pochampally</span>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
